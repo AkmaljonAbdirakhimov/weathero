@@ -1,0 +1,80 @@
+name: weathero
+
+version: 2.1.0
+
+environment:
+  sdk: ">=3.1.3 <4.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  dio: ^5.4.1
+  geolocator: ^11.0.0
+  fpdart: ^1.1.0
+  flutter_bloc: ^8.1.4
+  url_launcher: ^6.2.5
+  get_it: ^7.6.7
+  lottie: ^3.1.0
+  iconsax: ^0.0.8
+  flutter_local_notifications: ^17.0.0
+  path_provider: ^2.1.2
+  equatable: ^2.0.5
+  flutter_svg: ^2.0.10+1
+  geocoding: ^3.0.0
+  google_maps_flutter: ^2.6.0
+  wakelock_plus: ^1.2.2
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pretty_dio_logger: ^1.3.1
+  flutter_lints: ^3.0.1
+  device_preview: ^1.1.0
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/env/api.env
+    - assets/images/weather/Day Clouds.webp
+    - assets/images/weather/Day Rain.webp
+    - assets/images/weather/Day Snow.webp
+    - assets/images/weather/Day Storm.webp
+    - assets/images/weather/Day Sun.webp
+    - assets/images/weather/Day Wind.webp
+    - assets/images/weather/Night Clouds.webp
+    - assets/images/weather/Night Rain.webp
+    - assets/images/weather/Night Snow.webp
+    - assets/images/weather/Night Storm.webp
+    - assets/images/weather/Night Moon.webp
+    - assets/images/weather/Night Wind.webp
+    - assets/images/weather/humidity.svg
+    - assets/images/weather/sun.svg
+    - assets/images/weather/wind.svg
+    - assets/images/weather/snow.svg
+    - assets/images/weather/rain.svg
+    - assets/images/weather/sunny.svg
+    - assets/lottie/
+    - assets/map/map_dark_theme.json
+
+  # To add custom fonts to your application, add a fonts section here,
+  # example:
+  fonts:
+    - family: manrope
+      fonts:
+        - asset: assets/fonts/manrope/Manrope-Light.ttf
+        - asset: assets/fonts/manrope/Manrope-Regular.ttf
+        - asset: assets/fonts/manrope/Manrope-Medium.ttf
+        - asset: assets/fonts/manrope/Manrope-Bold.ttf
+
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
