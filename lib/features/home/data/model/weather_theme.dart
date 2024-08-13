@@ -51,7 +51,6 @@ class WeatherTheme {
           textColor: AppColors.cloud,
         );
       case WeatherState.Unknown:
-        // TODO: Add a custom image in case anything goes wrong.
         throw 0;
     }
   }

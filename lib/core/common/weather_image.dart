@@ -1,5 +1,6 @@
 part of 'common.dart';
 
+// ignore: must_be_immutable
 class WeatherImage extends StatefulWidget {
   final String? image;
   double? begin;
@@ -15,7 +16,7 @@ class WeatherImage extends StatefulWidget {
   });
 
   @override
-  _WeatherImageState createState() => _WeatherImageState();
+  State<WeatherImage> createState() => _WeatherImageState();
 }
 
 class _WeatherImageState extends State<WeatherImage>

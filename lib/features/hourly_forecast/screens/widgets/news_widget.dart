@@ -6,7 +6,7 @@ class NewsWidget extends StatefulWidget {
   final WeatherNewsModel article;
   final Daily dailyForecast;
   @override
-  _NewsWidgetState createState() => _NewsWidgetState();
+  State<NewsWidget> createState() => _NewsWidgetState();
 }
 
 class _NewsWidgetState extends State<NewsWidget> {

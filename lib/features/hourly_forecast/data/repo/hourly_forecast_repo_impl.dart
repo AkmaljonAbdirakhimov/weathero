@@ -46,7 +46,6 @@ class HourlyForecastRepoImpl extends HourlyForecastRepository {
         queryParameters: {'q': 'weather', 'apiKey': EnvHelper.NEWS_API_KEY},
       );
       final data = WeatherNewsModel.fromJson(result.data);
-      print(data.title);
       return right(data);
     } catch (e) {
       return left(ErrorHandler.handle(e).failure!);

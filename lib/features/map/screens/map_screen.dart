@@ -8,18 +8,17 @@ class Map extends StatefulWidget {
   const Map({super.key});
 
   @override
-  _MapState createState() => _MapState();
+  State<Map> createState() => _MapState();
 }
 
 class _MapState extends State<Map> {
   final Completer<GoogleMapController> _controller = Completer();
-  final Set<Marker> _markers = Set<Marker>();
+  final Set<Marker> _markers = <Marker>{};
   String mapTheme = '';
   static final LatLng _center = LatLng(Location.instance.position!.latitude,
       Location.instance.position!.longitude);
 
   void _onMapCreated(GoogleMapController controller) {
-    controller.setMapStyle(mapTheme);
     _controller.complete(controller);
   }
 
@@ -52,6 +51,7 @@ class _MapState extends State<Map> {
         GoogleMap(
           onMapCreated: _onMapCreated,
           markers: _markers,
+          style: mapTheme,
           circles: {
             Circle(
                 circleId: const CircleId("1"),

@@ -16,7 +16,7 @@ class DataWidget extends StatelessWidget {
       children: [
         SvgPicture.asset(
           icon,
-          width: AppDimensions.width! * 0.07,
+          width: AppDimensions.width * 0.07,
           fit: BoxFit.cover,
         ),
         const SizedBox(width: 5),

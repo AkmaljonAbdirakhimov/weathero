@@ -8,7 +8,7 @@ class DailyForecastWidget extends StatefulWidget {
 
   final DailyWeatherModel weatherModel;
   @override
-  _DailyForecastWidgetState createState() => _DailyForecastWidgetState();
+  State<DailyForecastWidget> createState() => _DailyForecastWidgetState();
 }
 
 class _DailyForecastWidgetState extends State<DailyForecastWidget>
